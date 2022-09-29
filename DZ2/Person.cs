@@ -8,16 +8,16 @@ namespace DZ2
 {
     internal class Person
     {
-        private string _Age;
+        private int _age;
 
-        public Person()
+        public Person(int age)
         {
-            _Age = "18";
+            _age = age;
         }
 
-        public string GiveAge()
+        public void GetInfo()
         {
-            return _Age;
+            Console.WriteLine($"Возвраст жильца {_age}");
         }
     }
 }
